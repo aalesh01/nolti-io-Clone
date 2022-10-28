@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { FaQuoteRight } from "react-icons/fa";
 import { Box, width } from "@mui/system";
 import { Typography } from "@mui/material";
-import "./ReviewCard.css";
 const Review = () => {
   return (
     <Box
+      id="review"
       sx={{
         display: "grid",
         gridTemplateColumns: "repeat(3,1fr)",
@@ -13,6 +13,12 @@ const Review = () => {
         margin: "auto",
         gap: "3%",
         color: "white",
+        ["@media  (min-width: 320px) and (max-width:480px)"]: {
+          gridTemplateColumns: "repeat(1,1fr)",
+        },
+        ["@media (min-width: 481px) and (max-width: 768px)"]: {
+          gridTemplateColumns: "repeat(2,1fr)",
+        },
       }}
     >
       <Box>
@@ -54,7 +60,7 @@ const Review = () => {
             >
               Sebastiano Guerriero <br /> CodyHouse
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -95,7 +101,7 @@ const Review = () => {
             >
               Sahil Lavingia <br /> Gumroad
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -137,7 +143,7 @@ const Review = () => {
             >
               Itamar Madar <br /> The SCP Foundation
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -179,7 +185,7 @@ const Review = () => {
             >
               Michał Tajchert <br /> Kanarek
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -238,7 +244,7 @@ const Review = () => {
             >
               Richard Rampas Volcanoids
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -279,7 +285,7 @@ const Review = () => {
             >
               Umberto Greco <br /> OpenTabs
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
       </Box>
@@ -341,7 +347,7 @@ const Review = () => {
               Bastian Allgeier
               <br /> Kirby CMS
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -383,7 +389,7 @@ const Review = () => {
               Dragos Bulugean
               <br /> Archbee
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -430,7 +436,7 @@ const Review = () => {
               Ervin Kalemi <br />
               Publer
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -470,7 +476,7 @@ const Review = () => {
               Guido Rosso <br />
               Rive
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -530,11 +536,20 @@ const Review = () => {
             >
               Hassan Rajwani <br /> REFSIX
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
       </Box>
-      <Box>
+      <Box 
+      sx={{
+                  ["@media  (min-width: 320px) and (max-width:480px)"]: {
+                      display: "none",
+                  },
+                  ["@media (min-width: 481px) and (max-width: 768px)"]: {
+                      display: "none",
+                  },
+      }}
+      >
         <Box
           sx={{
             padding: "6%",
@@ -575,9 +590,10 @@ const Review = () => {
                 color: "white",
               }}
             >
-                          Josh Merryman<br /> MessageDesk
+              Josh Merryman
+              <br /> MessageDesk
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -614,9 +630,10 @@ const Review = () => {
                 color: "white",
               }}
             >
-                          Tom Watson <br />Glass
+              Tom Watson <br />
+              Glass
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -655,9 +672,10 @@ const Review = () => {
                 color: "white",
               }}
             >
-                          Letterboxd<br /> @letterboxd
+              Letterboxd
+              <br /> @letterboxd
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -697,9 +715,9 @@ const Review = () => {
                 color: "white",
               }}
             >
-                          Dean Bates <br /> The Salvation Army
+              Dean Bates <br /> The Salvation Army
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -755,9 +773,9 @@ const Review = () => {
                 color: "white",
               }}
             >
-                          Greg Hamilton <br /> Lifecoach
+              Greg Hamilton <br /> Lifecoach
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
         <Box
@@ -796,9 +814,9 @@ const Review = () => {
                 color: "white",
               }}
             >
-              Tiimo <br/> @tiimoapp
+              Tiimo <br /> @tiimoapp
             </Typography>
-            <Box>"logo"</Box>
+            <Box></Box>
           </Box>
         </Box>
       </Box>

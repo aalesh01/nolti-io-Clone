@@ -29,7 +29,7 @@ const FloatingBar = () => {
     <Box
     sx={{
         borderRadius:"8px",
-        backgroundColor: 'black',
+        backgroundColor: 'white',
         border: "2px solid #000000",
         width: "50%",
         padding:"0% 1%",
@@ -42,16 +42,16 @@ const FloatingBar = () => {
         zIndex: 4,
         left: "25%",
         bottom: Scroll <= 2175.5 ? "2%" : "40%",
-        ['@media screen and(max-width: 1080px)']: {
-        justifyContent: "center",
+        ['@media (min-width: 300px) and (max-width: 1030px)']: {
+          justifyContent: "center",
   }
     }
   }
     >
-      <Typography color={'white'} variant="body1" gutterBottom>
+      <Typography color={'black'} variant="body1">
               <b>Try it free for 10 days</b> without a credit card
         </Typography>
-        <CreatenoltboardBT/>
+        <CreatenoltboardBT parent={"floatingbar"}/>
     </Box>
   )
 }
