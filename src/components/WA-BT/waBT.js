@@ -8,7 +8,7 @@ import  {faWhatsapp}  from '@fortawesome/free-brands-svg-icons'
 const WaBt = () => {
     return (<>
 
-        <ReactWhatsapp className='waBT' number="+917020172955" message="We can write any predefined message here..">
+        <ReactWhatsapp  className='waBT' number="+917020172955" message="We can write any predefined message here..">
         <FontAwesomeIcon className='waIcon' icon={faWhatsapp} />
             <h5>Chat with us</h5>
         </ReactWhatsapp>

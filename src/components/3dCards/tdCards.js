@@ -34,7 +34,7 @@ const TdCards = () => {
               cards={cards}
               height="1000px"
               width="70%"
-              margin="-20% auto"
+              margin="-200px auto"
               offset={2}
               showArrows={false}
           />

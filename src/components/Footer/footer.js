@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <BottomNavigation 
       sx={{
-        color:'rgba(0, 0, 0, 0.3)',
+        color:"#392946",
         display: "flex",
         alignContent: "center",
         justifyContent: "center",

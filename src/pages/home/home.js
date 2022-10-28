@@ -5,12 +5,12 @@ import TdCards from "../../components/3dCards/tdCards";
 
 const HomePage = () => {
   return (
-    <Box sx={{ width: "80%", margin: "5% auto" }}>
+    <Box sx={{color:"white" ,width: "80%", margin: "5% auto" }}>
       <Typography variant="h4" component="h2" gutterBottom>
         Feedback boards your users will love.
       </Typography>
       <Typography
-        sx={{ width: "50%", margin: "5% auto" }}
+        sx={{ color: "white", width: "50%", margin: "5% auto" }}
         variant="body1"
         display="block"
         gutterBottom
@@ -25,7 +25,7 @@ const HomePage = () => {
         Nolt powers user research at thousands <br/> of companies around the globe.{" "}
       </Typography>
       <Typography
-        sx={{ width: "50%", margin: "5% auto" }}
+        sx={{ color: "white", width: "50%", margin: "5% auto" }}
         variant="body1"
         display="block"
         gutterBottom

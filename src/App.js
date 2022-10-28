@@ -19,7 +19,9 @@ function App() {
       <Review/>
       <WaBt/>
       <FloatingBar />
-      <Box>
+      <Box sx={{
+        marginBottom: "-4px",
+      }}>
         <img width={'100%'} src="https://nolt.io/static/dist/images/landing/footer.2353da24de.svg" alt="" />
       </Box>
       <Footer/>

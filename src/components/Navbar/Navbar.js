@@ -36,7 +36,10 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar sx={{
+            backgroundColor:"#392946",
+            boxShadow:"none"
+        }} position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Box

@@ -29,7 +29,7 @@ const FloatingBar = () => {
     <Box
     sx={{
         borderRadius:"8px",
-        backgroundColor: 'rgb(24,117,210)',
+        backgroundColor: 'black',
         border: "2px solid #000000",
         width: "50%",
         padding:"0% 1%",
